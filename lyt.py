@@ -54,7 +54,6 @@ def lyt(input_file) -> None:
 				out[lang] += lines[start_pos:close_match.start()]
 		start_pos = close_match.end()
 
-	e(input_file.name)
 	for (language, source) in out.items():
 		lpy_ext_idx = input_file.name.rfind(".") + 1
 		output_filename = input_file.name[:lpy_ext_idx] + matching_extensions[language.lower()]
