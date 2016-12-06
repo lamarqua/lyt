@@ -54,7 +54,7 @@ code_close_re = re.compile(r'^(?:`{3,}|~{3,})(?= *$)', re.MULTILINE) # /^(?:`{3,
 
 @click.command()
 @click.argument("input_file", type=click.File('r'))
-def lyt(input_file) -> None:
+def lyt(input_file):
 	"""Literate programming using python."""
 	out = collections.defaultdict(str)
 	lines = input_file.read()
@@ -103,8 +103,6 @@ def lyt(input_file) -> None:
 			e("Wrote %s." % output_filename)
 			# output_file.write()
 			output_file.write(source)
-
-
 
 if __name__ == "__main__":
 	lyt()
