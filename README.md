@@ -19,7 +19,7 @@ For more information, use `--help`:
  - Stay simple.
      + In particular, handling several files at a time isn't a goal
      + Nor is handling the dependency between generated files and the source.
-
+     
 ## Future
  - Add support for more languages.
  - Allow autodetection of languages.
