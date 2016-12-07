@@ -5,13 +5,19 @@ Lyt is a literate programming tool, written in Python, that extracts fenced code
 It is licensed under the GPLv3. See the LICENSE.txt file in this repo.
 
 ## Installation
+Using pip:
 
+`pip install lyt`
+
+`lyt` depends solely on `click` for command line processing.
 
 ## Usage
 Open your favorite command line:
+
 `$ lyt file.md`
 
 For more information, use `--help`:
+
 `$ lyt --help`
 
 ## Goals
